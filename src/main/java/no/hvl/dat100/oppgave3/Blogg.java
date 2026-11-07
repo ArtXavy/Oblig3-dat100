@@ -5,27 +5,27 @@ import no.hvl.dat100.oppgave1.*;
 
 public class Blogg {
 
-	// TODO: objektvariable 
+	private Innlegg[] innleggtabell;
+	private int nesteledig;
 
 	public Blogg() {
-		throw new UnsupportedOperationException(TODO.constructor("Blogg"));
+		this(20);
 	}
 
 	public Blogg(int lengde) {
-		throw new UnsupportedOperationException(TODO.constructor("Blogg"));
+		innleggtabell = new Innlegg[lengde];
+		nesteledig = 0;
 	}
 
 	public int getAntall() {
-		throw new UnsupportedOperationException(TODO.method());
+		return nesteledig;
 	}
-	
+
 	public Innlegg[] getSamling() {
-		throw new UnsupportedOperationException(TODO.method());
-
+		return innleggtabell;
 	}
-	
-	public int finnInnlegg(Innlegg innlegg) {
 
+	public int finnInnlegg(Innlegg innlegg) {
 		throw new UnsupportedOperationException(TODO.method());
 	}
 
@@ -35,38 +35,31 @@ public class Blogg {
 
 	public boolean ledigPlass() {
 		throw new UnsupportedOperationException(TODO.method());
-
 	}
-	
-	public boolean leggTil(Innlegg innlegg) {
 
+	public boolean leggTil(Innlegg innlegg) {
 		throw new UnsupportedOperationException(TODO.method());
 	}
-	
+
 	public String toString() {
 		throw new UnsupportedOperationException(TODO.method());
 	}
 
 	// valgfrie oppgaver nedenfor
-	
+
 	public void utvid() {
 		throw new UnsupportedOperationException(TODO.method());
 	}
-	
+
 	public boolean leggTilUtvid(Innlegg innlegg) {
-
 		throw new UnsupportedOperationException(TODO.method());
-		
 	}
-	
+
 	public boolean slett(Innlegg innlegg) {
-		
 		throw new UnsupportedOperationException(TODO.method());
 	}
-	
-	public int[] search(String keyword) {
-		
-		throw new UnsupportedOperationException(TODO.method());
 
+	public int[] search(String keyword) {
+		throw new UnsupportedOperationException(TODO.method());
 	}
 }
