@@ -1,8 +1,7 @@
 package no.hvl.dat100.oppgave2;
 
 public class Bilde extends Tekst {
-
-	// TODO - objekt variable
+	
 	private String url;
 
 	public Bilde(int id, String bruker, String dato, String tekst, String url) {
