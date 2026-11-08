@@ -26,11 +26,19 @@ public class Blogg {
 	}
 
 	public int finnInnlegg(Innlegg innlegg) {
-		throw new UnsupportedOperationException(TODO.method());
+		for (int i = 0; i < nesteledig; i++) {
+			if (innleggtabell[i].erLik(innlegg)) {
+				return i;
+			}
+		}
+
+		return -1;
+
 	}
 
+
 	public boolean finnes(Innlegg innlegg) {
-		throw new UnsupportedOperationException(TODO.method());
+		return finnInnlegg(innlegg) != -1;
 	}
 
 	public boolean ledigPlass() {
@@ -45,21 +53,6 @@ public class Blogg {
 		throw new UnsupportedOperationException(TODO.method());
 	}
 
-	// valgfrie oppgaver nedenfor
-
-	public void utvid() {
-		throw new UnsupportedOperationException(TODO.method());
-	}
-
-	public boolean leggTilUtvid(Innlegg innlegg) {
-		throw new UnsupportedOperationException(TODO.method());
-	}
-
-	public boolean slett(Innlegg innlegg) {
-		throw new UnsupportedOperationException(TODO.method());
-	}
-
-	public int[] search(String keyword) {
-		throw new UnsupportedOperationException(TODO.method());
-	}
 }
+
+	// valgfrie opgaver
