@@ -42,15 +42,31 @@ public class Blogg {
 	}
 
 	public boolean ledigPlass() {
-		throw new UnsupportedOperationException(TODO.method());
+		return nesteledig < innleggtabell.length;
 	}
 
 	public boolean leggTil(Innlegg innlegg) {
-		throw new UnsupportedOperationException(TODO.method());
+		if (finnes(innlegg)) {
+			return false;
+		}
+
+		if (!ledigPlass()) {
+			return false;
+		}
+
+		innleggtabell[nesteledig] = innlegg;
+		nesteledig++
+		return true;
 	}
 
+	@Override
 	public String toString() {
-		throw new UnsupportedOperationException(TODO.method());
+		String resultat = nesteledig + "\n";
+
+		for (int i = 0; i < nesteledig; i++) {
+			resultat += innleggtabell[i].toString();
+		}
+		return resultat;
 	}
 
 }
