@@ -55,7 +55,7 @@ public class Blogg {
 		}
 
 		innleggtabell[nesteledig] = innlegg;
-		nesteledig++
+		nesteledig++;
 		return true;
 	}
 
